@@ -4,13 +4,97 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Rematricula</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 <body>
-	<form action="https://formsubmit.co/micro01escola@protonmail.com" method="POST">
-		<input type="text" name="Nome da Criança">
-		<input type="date" name="Data de Nacimento">
-		<input type="text" name="Responsável">
-		<button type="submit">Enviar</button>
-	</form>
+	<main>
+		<div class="salute">
+			<h1>Rematrícula 2023</h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá, este é o formulário de rematricula para o ano de 2023 da escola Mary Camargo.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por favor, após o preenchimento e envio deste formulário, dirija-se a escola para assinar este documento.</p><br/>
+			<p>Obrigado!</p>
+		</div>
+
+		<form action="https://formsubmit.co/micro01escola@protonmail.com" method="POST">
+			<fieldset>
+				<div class="container">
+					<label>1- Nome do aluno</label><br>
+					<input type="text" required name="Aluno" autofocus>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>2- Série atual</label><br>
+					<select name="Ano_atual" required >
+						<option value="">Ano atual em que o aluno esta cursando</option>
+						<option value="1º ano">1º ano</option>
+						<option value="2º ano">2º ano</option>
+						<option value="3º ano">3º ano</option>
+						<option value="4º ano">4º ano</option>
+						<option value="5º ano">5º ano</option>
+					</select>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>3- Período em que deseja realizar a rematrícula</label><br>
+					<select name="Periodo" required >
+						<option value="">Selecione o periodo por dia</option>
+						<option value="Integral">Período integral - (O DIA TODO)</option>
+						<option value="Manhã">Manhã - (DAS 7H30MIN ÀS 12H)</option>
+						<option value="Tarde">Tarde - (DAS 13H ÀS 17H30MIN)</option>
+					</select>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container radio_container">
+					<label>4- O aluno está autorizado a ir embora sozinho ?</label><br>
+
+					<div>
+						<input type="radio" name="Pode_ir_embora_sozinho" value="Não" checked="yes"/>
+						<label class="opcao_radio">Não</label>
+					</div>
+					
+					<div>
+						<input type="radio" name="Pode_ir_embora_sozinho" value="Sim"/>
+						<label class="opcao_radio">Sim</label>
+					</div>
+					
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>5- Nome responsável</label><br>
+					<input type="text" required name="name">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>6- Telefone responsável</label><br>
+					<input type="text" required name="name">
+				</div>
+			</fieldset>
+
+			</br>
+			<h3>Pessoas autorizadas a retirá-lo da Escola</h3>
+
+			<fieldset>
+				<div class="container">
+					<label></label><br>
+					<input type="text" required name="name">
+				</div>
+			</fieldset>
+	
+			<button type="submit">Enviar</button>
+		</form>
+
+	</main>
 </body>
 </html>
+
+<!--https://alternativapara.com.br/s/formtide-->
