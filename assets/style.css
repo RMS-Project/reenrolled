@@ -26,7 +26,7 @@ main {
 	width: 70vw;
 	flex-direction: column;
 
-	max-width: 600px;
+	min-width: 600px;
 
 	margin: 100px 0;
 }
