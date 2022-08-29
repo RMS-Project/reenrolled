@@ -15,7 +15,7 @@
 
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá, este é o formulário de rematrícula para o ano de 2023 da escola Mary Camargo.</p>
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Por favor, após o preenchimento e envio deste formulário, dirija-se a escola para assinar este documento.</p><br/>
-			<p>Obrigado!</p>
+			<p class="position__rigth">Obrigado!</p>
 		</div>
 
 		</br>
@@ -46,7 +46,8 @@
 
 			<fieldset>
 				<div class="container">
-					<label>Período em que deseja realizar a rematrícula</label><br>
+					<label>Período de preferência</label><br>
+					<label class="obs">OBS: O PERÍODO ESTA SUJEITO A DISPONIBILIDADE DE VAGAS EM SALAS.</label>
 					<select name="Periodo" required >
 						<option value="">Selecione o periodo por dia</option>
 						<option value="Integral">Período integral - (O DIA TODO)</option>
@@ -64,12 +65,12 @@
 
 					<div>
 						<input type="radio" name="Pode_ir_embora_sozinho" value="Não" checked="yes"/>
-						<label class="opcao_radio">Não</label>
+						<label class="opcao__radio">Não</label>
 					</div>
 					
 					<div>
 						<input type="radio" name="Pode_ir_embora_sozinho" value="Sim"/>
-						<label class="opcao_radio">Sim</label>
+						<label class="opcao__radio">Sim</label>
 					</div>
 					
 				</div>
@@ -84,12 +85,12 @@
 
 					<div>
 						<input type="radio" name="Uso_de_imagem" value="Não" checked="yes" required />
-						<label class="opcao_radio">Não</label>
+						<label class="opcao__radio">Não</label>
 					</div>
 					
 					<div>
 						<input type="radio" name="Uso_de_imagem" value="Sim" required />
-						<label class="opcao_radio">Sim</label>
+						<label class="opcao__radio">Sim</label>
 					</div>
 					
 				</div>
@@ -98,14 +99,14 @@
 			<fieldset>
 				<div class="container">
 					<label>Telefone Mãe</label><br>
-					<input type="tel" required name="Telefone_Mae" required>
+					<input type="tel" required name="Telefone_Mae" pattern="^[0-9-+\s()]*$" onkeypress="mascara(this, telefone)" maxlength="15" placeholder="(__) _____-____" required>
 				</div>
 			</fieldset>
 
 			<fieldset>
 				<div class="container">
 					<label>Telefone Pai</label><br>
-					<input type="tel" required name="Telefone_Pai" required>
+					<input type="tel" required name="Telefone_Pai" pattern="^[0-9-+\s()]*$" onkeypress="mascara(this, telefone)" maxlength="15" placeholder="(__) _____-____" required>
 				</div>
 			</fieldset>
 
@@ -136,7 +137,7 @@
 			<fieldset>
 				<div class="container">
 					<label>Telefone</label><br>
-					<input type="tel" name="Telefone_1">
+					<input type="tel" name="Telefone_1" pattern="^[0-9-+\s()]*$" onkeypress="mascara(this, telefone)" maxlength="15" placeholder="(__) _____-____">
 				</div>
 			</fieldset>
 
@@ -163,7 +164,7 @@
 			<fieldset>
 				<div class="container">
 					<label>Telefone</label><br>
-					<input type="tel" name="Telefone_2">
+					<input type="tel" name="Telefone_2" pattern="^[0-9-+\s()]*$" onkeypress="mascara(this, telefone)" maxlength="15" placeholder="(__) _____-____">
 				</div>
 			</fieldset>
 
@@ -190,7 +191,7 @@
 			<fieldset>
 				<div class="container">
 					<label>Telefone</label><br>
-					<input type="tel" name="Telefone_3">
+					<input type="tel" name="Telefone_3" pattern="^[0-9-+\s()]*$" onkeypress="mascara(this, telefone)" maxlength="15" placeholder="(__) _____-____">
 				</div>
 			</fieldset>
 
@@ -217,7 +218,7 @@
 			<fieldset>
 				<div class="container">
 					<label>Telefone</label><br>
-					<input type="tel" name="Telefone_4">
+					<input type="tel" name="Telefone_4" pattern="^[0-9-+\s()]*$" onkeypress="mascara(this, telefone)" maxlength="15" placeholder="(__) _____-____">
 				</div>
 			</fieldset>
 
@@ -230,6 +231,7 @@
 			<button>Enviar</button>
 		</form>
 
+		<script type="text/javascript" src="assets/validation.js"></script>
 	</main>
 </body>
 </html>
