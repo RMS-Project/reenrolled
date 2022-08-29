@@ -15,17 +15,21 @@
 			<p>Obrigado!</p>
 		</div>
 
+		</br>
+		<hr>
+		</br>
+
 		<form action="https://formsubmit.co/micro01escola@protonmail.com" method="POST">
 			<fieldset>
 				<div class="container">
-					<label>1- Nome do aluno</label><br>
-					<input type="text" required name="Aluno" autofocus>
+					<label>Nome do aluno</label><br>
+					<input type="text" required name="Aluno" autofocus required>
 				</div>
 			</fieldset>
 
 			<fieldset>
 				<div class="container">
-					<label>2- Série atual</label><br>
+					<label>Série atual</label><br>
 					<select name="Ano_atual" required >
 						<option value="">Ano atual em que o aluno esta cursando</option>
 						<option value="1º ano">1º ano</option>
@@ -39,7 +43,7 @@
 
 			<fieldset>
 				<div class="container">
-					<label>3- Período em que deseja realizar a rematrícula</label><br>
+					<label>Período em que deseja realizar a rematrícula</label><br>
 					<select name="Periodo" required >
 						<option value="">Selecione o periodo por dia</option>
 						<option value="Integral">Período integral - (O DIA TODO)</option>
@@ -51,7 +55,7 @@
 
 			<fieldset>
 				<div class="container radio_container">
-					<label>4- O aluno está autorizado a ir embora sozinho ?</label><br>
+					<label>O aluno está autorizado a ir embora sozinho ?</label><br>
 
 					<div>
 						<input type="radio" name="Pode_ir_embora_sozinho" value="Não" checked="yes"/>
@@ -67,30 +71,155 @@
 			</fieldset>
 
 			<fieldset>
-				<div class="container">
-					<label>5- Nome responsável</label><br>
-					<input type="text" required name="name">
+				<div class="container radio_container">
+					<label class="autorization">AUTORIZO o uso de imagem do(a) meu(minha) filho(filha), em qualquer materiais entre fotos e arquivos audiovisuais para ser utilizada em publicações institucionais nas escolas municipais e apresentações de trabalhos da Secretaria de Educação. </label><br>
+
+					<div>
+						<input type="radio" name="Pode_ir_embora_sozinho" value="Não" checked="yes" required />
+						<label class="opcao_radio">Não</label>
+					</div>
+					
+					<div>
+						<input type="radio" name="Pode_ir_embora_sozinho" value="Sim" required />
+						<label class="opcao_radio">Sim</label>
+					</div>
+					
 				</div>
 			</fieldset>
 
 			<fieldset>
 				<div class="container">
-					<label>6- Telefone responsável</label><br>
-					<input type="text" required name="name">
+					<label>Telefone Mãe</label><br>
+					<input type="tel" required name="name" required>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>Telefone Pai</label><br>
+					<input type="tel" required name="name" required>
 				</div>
 			</fieldset>
 
 			</br>
+			<hr>
+			</br>
+
 			<h3>Pessoas autorizadas a retirá-lo da Escola</h3>
+
+			</br>
+
+			<h4>Pessoa 1</h4>
 
 			<fieldset>
 				<div class="container">
-					<label></label><br>
-					<input type="text" required name="name">
+					<label>Nome</label><br>
+					<input type="text" name="name">
 				</div>
 			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>Parentesco</label><br>
+					<input type="text" name="name">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>Telefone</label><br>
+					<input type="tel" name="name">
+				</div>
+			</fieldset>
+
+			</br>
+			<hr>
+			</br>
+
+			<h4>Pessoa 2</h4>
+
+			<fieldset>
+				<div class="container">
+					<label>Nome</label><br>
+					<input type="text" name="name">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>Parentesco</label><br>
+					<input type="text" name="name">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>Telefone</label><br>
+					<input type="tel" name="name">
+				</div>
+			</fieldset>
+
+			</br>
+			<hr>
+			</br>
+
+			<h4>Pessoa 3</h4>
+
+			<fieldset>
+				<div class="container">
+					<label>Nome</label><br>
+					<input type="text" name="name">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>Parentesco</label><br>
+					<input type="text" name="name">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>Telefone</label><br>
+					<input type="tel" name="name">
+				</div>
+			</fieldset>
+
+			</br>
+			<hr>
+			</br>
+
+			<h4>Pessoa 4</h4>
+
+			<fieldset>
+				<div class="container">
+					<label>Nome</label><br>
+					<input type="text" name="name">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>Parentesco</label><br>
+					<input type="text" name="name">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="container">
+					<label>Telefone</label><br>
+					<input type="tel" name="name">
+				</div>
+			</fieldset>
+
+			</br>
+			<hr>
+			</br>
+
+			<input type="hidden" name="_captcha" value="false">
 	
-			<button type="submit">Enviar</button>
+			<button>Enviar</button>
 		</form>
 
 	</main>
